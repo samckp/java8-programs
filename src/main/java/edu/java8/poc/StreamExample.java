@@ -40,5 +40,17 @@ public class StreamExample {
 
         Stream<Integer> streamList = lists.stream();
         streamList.forEach(p -> System.out.println(p));
+
+        //------------------------------------------
+
+        List<Integer> listInt = new ArrayList<Integer>();
+
+        for(int i = 1; i< 10; i++){
+            listInt.add(i);
+        }
+
+        Stream<Integer> streamInt = listInt.stream();
+        Integer[] evenNumbersArr = streamInt.filter(i -> i%2 == 0).toArray(Integer[]::new);
+        System.out.print(evenNumbersArr.length);
     }
 }
