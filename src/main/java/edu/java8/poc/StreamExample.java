@@ -52,5 +52,22 @@ public class StreamExample {
         Stream<Integer> streamInt = listInt.stream();
         Integer[] evenNumbersArr = streamInt.filter(i -> i%2 == 0).toArray(Integer[]::new);
         System.out.print(evenNumbersArr.length);
+
+        System.out.print("-----------------Parallem Stream---------------------");
+        parallelStream();
+    }
+
+    public static void parallelStream(){
+
+        List<Integer> list = new ArrayList<Integer>();
+        for(int i = 1; i< 10; i++){
+            list.add(i);
+        }
+
+        //Here creating a parallel stream
+        Stream<Integer> stream = list.parallelStream();
+
+        Integer[] evenNumbersArr = stream.filter(i -> i%2 == 0).toArray(Integer[]::new);
+        System.out.print(evenNumbersArr);
     }
 }
