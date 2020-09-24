@@ -69,5 +69,14 @@ public class StreamExample {
 
         Integer[] evenNumbersArr = stream.filter(i -> i%2 == 0).toArray(Integer[]::new);
         System.out.print(evenNumbersArr);
+
+
+        //------------filter example
+        System.out.print("\n\n------------filter example\n");
+        List<Integer> listNum = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+        listNum.stream()
+                .filter(n -> n % 2 == 0)
+                .forEach(System.out::println);
     }
 }
