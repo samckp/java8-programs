@@ -11,6 +11,6 @@ public class DefaultMethod implements Moveable{
 
         DefaultMethod defaultMethod = new DefaultMethod();
         defaultMethod.move();
-
+        defaultMethod.walk();
     }
 }
