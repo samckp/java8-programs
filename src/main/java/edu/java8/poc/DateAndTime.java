@@ -31,6 +31,7 @@ public class DateAndTime {
 
         dataTime(); // different examples of datetimeLocal
         datetimeMethods();
+        datetimeMinusMethods();
     }
 
     public static void dataTime(){
@@ -84,5 +85,35 @@ public class DateAndTime {
         System.out.println("nano seconds of the date time is:"+nano);
         int year = dateTime.getYear(); // returns year field value for the date time.
         System.out.println("year of the date is :"+year);
+    }
+
+    public static void datetimeMinusMethods(){
+
+        final LocalDateTime dateTime = LocalDateTime.now();
+        //creates a new date time copy after subtracting 10 days from the date time.
+        LocalDateTime ldtmd = dateTime.minusDays(10);
+        System.out.println("date time after subtracting 10 days is : "+ldtmd.toString());
+//creates a new date time copy after subtracting 10 hours from the date time.
+        LocalDateTime ldtmh = dateTime.minusHours(10);
+        System.out.println("date time after subtracting 10 hours is : "+ldtmh.toString());
+//creates a new date time copy after subtracting 21 minutes from the date time.
+        LocalDateTime ldtmm = dateTime.minusMinutes(21);
+        System.out.println("date time after subtracting minutes is : "+ldtmm.toString());
+//creates a new date time copy after subtracting 2 months from the date time.
+        LocalDateTime ldtmmm = dateTime.minusMonths(2);
+        System.out.println("date time after subtracting months is : "+ldtmmm.toString());
+//creates a new date time copy after subtracting 3 years from the date time.
+        LocalDateTime ldtmy = dateTime.minusYears(3);
+        System.out.println("date time after subtracting years is : "+ldtmy.toString());
+//creates a new date time copy after subtracting 32 weeks from the date time.
+        LocalDateTime ldtmw = dateTime.minusWeeks(32);
+        System.out.println("date time after subtracting weeks is : "+ldtmw.toString());
+//creates a new date time copy after subtracting 1200 seconds from the date time.
+        LocalDateTime ldtms = dateTime.minusSeconds(1200);
+        System.out.println("date time after subtracting secs is : "+ldtms.toString());
+//creates a new date time copy after subtracting 12000 nano seconds from the date time.
+        LocalDateTime ldtmn = dateTime.minusNanos(12000);
+        System.out.println("date time after subtracting nanos is : "+ldtmn.toString());
+
     }
 }
