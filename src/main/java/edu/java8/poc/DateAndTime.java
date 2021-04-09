@@ -32,6 +32,7 @@ public class DateAndTime {
         dataTime(); // different examples of datetimeLocal
         datetimeMethods();
         datetimeMinusMethods();
+        datetimePlusMethods();
     }
 
     public static void dataTime(){
@@ -115,5 +116,34 @@ public class DateAndTime {
         LocalDateTime ldtmn = dateTime.minusNanos(12000);
         System.out.println("date time after subtracting nanos is : "+ldtmn.toString());
 
+    }
+
+    public static void datetimePlusMethods(){
+
+        final LocalDateTime dateTime = LocalDateTime.now();
+        //creates a new date time copy after adding 10 days to the date time.
+        LocalDateTime ldtpd = dateTime.plusDays(10);
+        System.out.println("date time after adding days is : "+ldtpd.toString());
+//creates a new date time copy after adding 100 hours to the date time.
+        LocalDateTime ldtph = dateTime.plusHours(100);
+        System.out.println("date time after adding hours is : "+ldtph.toString());
+//creates a new date time copy after adding 190 minutes to the date time.
+        LocalDateTime ldtpmm = dateTime.plusMinutes(190);
+        System.out.println("date time after adding minutes is : "+ldtpmm.toString());
+//creates a new date time copy after adding 32 months to the date time.
+        LocalDateTime ldtpdm = dateTime.plusMonths(32);
+        System.out.println("date time after adding months is : "+ldtpdm.toString());
+//creates a new date time copy after adding 120000 nano seconds to the date time.
+        LocalDateTime ldtpn = dateTime.plusNanos(120000);
+        System.out.println("date time after adding nanos is : "+ldtpn.toString());
+//creates a new date time copy after adding 1200 seconds to the date time.
+        LocalDateTime ldtps = dateTime.plusSeconds(1200);
+        System.out.println("date time after adding seconds is : "+ldtps.toString());
+//creates a new date time copy after adding 24 weeks to the date time.
+        LocalDateTime ldtpw = dateTime.plusWeeks(24);
+        System.out.println("date time after adding weeks is : "+ldtpw.toString());
+//creates a new date time copy after adding 3 years to the date time.
+        LocalDateTime ldtpy = dateTime.plusYears(3);
+        System.out.println("date time after adding years is : "+ldtpy.toString());
     }
 }
