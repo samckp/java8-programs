@@ -7,5 +7,4 @@ java 8 example :
 4. String Join.
 5. Date Time example programs added.
 6. ARM Automatic resourse management
-7. 
-8. 
+7. Filter example
