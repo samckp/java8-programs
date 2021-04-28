@@ -1,5 +1,6 @@
 package edu.java8.poc;
 
+import java.util.stream.Collectors;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +27,11 @@ public class FilterExample {
                 .forEach(System.out::println);
 
         // fetching filtered data as a list
-        
+        List<Float> productPriceList =
+                productsList.stream()
+                        .map(x->x.price)         // fetching price
+                        .collect(Collectors.toList());  // collecting as list
+        System.out.println(productPriceList);
     }
 
     public static List<Product> initProduct(){
