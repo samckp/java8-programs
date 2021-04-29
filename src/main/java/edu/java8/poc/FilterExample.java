@@ -32,6 +32,12 @@ public class FilterExample {
                         .map(x->x.price)         // fetching price
                         .collect(Collectors.toList());  // collecting as list
         System.out.println(productPriceList);
+
+        //calculate average
+        Double average = productsList.stream()
+                .collect(Collectors.averagingDouble(p->p.price));
+        System.out.println("Average price is: "+average);
+        
     }
 
     public static List<Product> initProduct(){
