@@ -37,7 +37,12 @@ public class FilterExample {
         Double average = productsList.stream()
                 .collect(Collectors.averagingDouble(p->p.price));
         System.out.println("Average price is: "+average);
-        
+
+        //Count of  elements
+        Long noOfElements = productsList.stream()
+                .collect(Collectors.counting());
+        System.out.println("Total elements : "+noOfElements);
+
     }
 
     public static List<Product> initProduct(){
