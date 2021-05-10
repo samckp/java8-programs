@@ -9,3 +9,4 @@ java 8 example :
 6. ARM Automatic resourse management
 7. Filter example
 8. String joiner
+9. Max Min programs
