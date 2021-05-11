@@ -10,3 +10,4 @@ java 8 example :
 7. Filter example
 8. String joiner
 9. Max Min programs
+10. Sequence of Substring finding in a String.
