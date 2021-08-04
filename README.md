@@ -12,4 +12,4 @@ java 8 example :
 9. Max Min programs
 10. Sequence of Substring finding in a String.
 11. Find Second smallest no. in an array.
-12. 
+12. Palindrom check
