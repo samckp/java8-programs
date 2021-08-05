@@ -1,7 +1,5 @@
 package edu.java8.poc;
 
-import java.util.*;
-
 public class Test {
 
     public static void main(String[] args) {
@@ -13,7 +11,6 @@ public class Test {
         System.out.println(polindrom("mmdaa"));
         System.out.println(polindrom("adda"));
         System.out.println(polindrom("Test"));
-
     }
 
     public static void secondSmallest(int arr[]){
